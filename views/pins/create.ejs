@@ -1,0 +1,35 @@
+
+
+<% layout('layout') %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-10">
+			<h1>Create a New Pin</h1>
+			<form role="form" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<!-- add the PinSchema to the "for"  -->
+					<label for="title">Title:</label>
+					<input type="text" class="form-control" name="title" />
+				</div>
+				<div class="form-group">
+					<!-- add the PinSchema to the "for"  -->
+					<label for="desc">Description:</label>
+					<textarea type="text" class="form-control" name="desc"> </textarea>
+				</div>
+				<div class="form-group">
+					<!-- add the PinSchema to the "for"  -->
+					<label for="username">Created by:</label>
+					<input type="text" class="form-control" name="username" />
+				</div>
+				<div class="form-group">
+					<!-- add the PinSchema to the "for"  -->
+					<label for="sampleFile">Image Path:</label>
+					<!-- this will always be able to access the file -->
+					<input type="file" name="sampleFile" required="" />
+				</div>
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
